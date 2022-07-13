@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&family=Josefin+Slab:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background: #ccc url(images/images123.jpg) no-repeat 0 0;
+            background-size: cover;
+        }
+        header { 
+            /* 類似navbar 主頁導覽*/
+            background: rgba(133, 206, 219, 0.534) url(images/E-1132007-D3EA8ABF.jpg) no-repeat 0 0 ;
+            background-size: cover;
+            overflow: auto;
+            /* 溢位處理 */
+            height: 120px;
+            padding: 10px 100px;
+            position: fixed;
+            top: 0;
+            z-index: 3;
+            width: 100%;
+            box-sizing: border-box;
+            /* 修正,box、modle的位子 */
+        }
+        .logo {
+            /* MONKEY */
+            float: left;
+            color: rgb(7, 2, 54);
+        }
+        nav {
+            /* BTN位子 */
+            float: right;
+        }
+        nav a {
+            /* BTN詳細數據 */
+            color: rgb(5, 43, 43);
+            line-height: 100px;
+            text-decoration: none;
+            /* 字的裝飾:底線去掉 */
+            margin-right: 10px;
+            background-color: rgb(185, 175, 241) ;
+            /* BTN字的顏色 */
+            padding: 10px 20px;
+            border-radius: 15px;
+            /* 按鍵圓角程度 */
+            box-shadow: 0 0 10px rgb(39, 52, 228);
+            /* 按鍵的陰影 */
+
+        }
+        nav a:hover {
+            /* 滑鼠游標移到BTN後顯現的顏色 */
+            color: aquamarine;
+            background-color: blanchedalmond;
+        }
+        footer {
+            /* 頁尾樣式設定 */
+            background-color: rgb(140, 159, 245);
+            color: aliceblue;
+            height: 80px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            /* 文字置中 */
+            line-height: 80px;
+        }
+        .wrap {
+            /* 主頁 */
+            /* 頁面大小決定 */
+            margin:120px 0;
+            /* 前面大小，上右下左 */
+            /* border: 1px solid #f00; */
+            position: relative;
+        }
+        fieldset{ 
+            /* 外框 */
+            width: 950px;
+            height: 850px;
+              /* 外框大小 */
+            border: 10px groove rgba(26, 83, 241, 0.829); 
+             /* 外框顏色、粗度 */
+            margin: 15px auto;
+            border-radius: 6px;  
+            /* 外框四腳弧度(越大越圓，也可以用%來更改) */
+            border-radius: 25px; 
+             /* 外框陰影 */
+            box-shadow: 0 0 7px; 
+             /* 陰影大小、前面數字歸零代表陰影的位置，後面可加顏色 */
+             float: left;
+        }
+        .banner1 {
+            /* 主頁圖片跟顯現的文字 */
+            width: 100%;
+            height: 850px;
+            background-color: rgba(138, 45, 175, 0.411);
+            /* background: #ccc url(images/images123.jpg) no-repeat 0 0;
+            background-size: cover; */
+            float: left;
+            border: white;
+        }
+        .banner2 {
+            /* 主頁圖片跟顯現的文字 */
+            width: 100%;
+            height: 500px;
+            background: rgba(113, 111, 250, 0.699);
+            float: left;
+        }
+        .news {
+            /* 綠色區塊 */
+            width: 860px;
+            height: 480px;
+            background-color:  rgb(66, 238, 178) ;
+            background-image: url(images/images24x24.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 20px 30px;
+            float: left;
+        }
+        .map {
+            margin: 50px 20px;
+            border: 15px groove rgb(108, 88, 184);
+            clear: left;
+            height: 500px;
+            width: 900px;
+            border-radius: 6px;  
+            /* 外框四腳弧度(越大越圓，也可以用%來更改) */
+            border-radius: 25px; 
+             /* 外框陰影 */
+            box-shadow: 0 0 7px; 
+             /* 陰影大小、前面數字歸零代表陰影的位置，後面可加顏色 */
+             float: left;
+        }
+        h2{
+            color: rgb(218, 248, 248);
+            font-size: 60px;
+            /* 文字大小 */
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+        .p1 {
+            font-size: 24px;
+            position: absolute;
+            top: 200px;
+            left: 50px;
+            width: 780px;
+            margin: auto;
+            border: 3px double rgba(45, 116, 247, 0.658);
+            background-color: rgba(209, 236, 248, 0.644);
+            padding: 30px;
+            line-height: 1.8em;
+            font-family: 'Josefin Slab', serif;
+            
+        }
+        .img1 {
+            position: absolute;
+            top: 500px;
+            left: 50px;
+            width: 850px;
+        }
+        h1 {
+            color: rgb(231, 243, 252);
+            font-size: 48px;
+            position: absolute;
+            display: inline-block;
+            /* 文字並排 */
+            line-height: 120px;
+            /* 文字位置置中 */
+            font-family: 'Josefin Slab', serif;
+        }
+        .p2 {
+            font-size: 14px;
+            margin: 5px;
+            border: 3px double rgba(211, 18, 250, 0.603);
+            background-color: rgba(250, 173, 220, 0.521);
+            padding: 5px;
+            line-height: 1.8em;
+        }
+        h3{
+            color: rgb(218, 248, 248);
+            font-size: 48px;
+            /* 文字大小 */
+            top: 100px;
+            right: 100px;
+        }
+        ul{
+            color: blue;
+            margin: 10px;
+            padding: 10px;
+            font-size: 24px;
+            border: 3px solid rgba(5, 143, 207, 0.651);
+            background-color: rgba(151, 234, 240, 0.521);
+        }                               
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/—Pngtree—soda soda bottle cartoon mineral_3780132.png" alt="" width="100">
+            <h1>SODA</h1>
+        </div>
+        <nav>
+            <a href="">BTN01</a><a href="">BTN02</a><a href="">BTN03</a><a href="">BTN04</a><a href="">BTN05</a>
+        </nav>
+    </header>
+    <div class="wrap">
+        <div style="float: left; width: 75%;">
+            <fieldset>
+                <div class="banner1">
+                    <h2>HELLO!!!</h2>
+                    <p class="p1">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa fuga maiores temporibus at excepturi, maxime quidem magnam rem repellat beatae atque porro architecto deserunt! Voluptatibus velit veritatis soluta quam illo.
+                    </p>
+                    <img class="img1" src="images/true.jpg" alt="">
+                </div>
+            </fieldset>
+            
+            
+            <!-- <div class="news" >
+                <p class="p2">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quidem perferendis culpa dolor aut tenetur nihil, corporis cumque, officiis iste impedit eos dolore ducimus ullam exercitationem sint voluptatem ratione eaque.
+                    Ipsum sit porro dolore quibusdam excepturi corrupti repellat autem recusandae voluptatibus culpa? Laborum eum voluptatem culpa saepe praesentium temporibus suscipit, quae, maiores ab aliquid at unde esse voluptates nobis est?
+                </p>
+            </div> -->
+            
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3642.577134151909!2d120.64121005083965!3d24.081191484350857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693b1ea38aba49%3A0x14e731f0f8c240e4!2z6Iy25aW25aW25omL5YGa6bue5b-DLeeDj-aXpee4veW6lw!5e0!3m2!1szh-TW!2stw!4v1645686924210!5m2!1szh-TW!2stw" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div style="float: right; width: 25%;">
+            <div class="banner2">
+                <h3>content</h3>
+                <p class="p2">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quidem perferendis culpa dolor aut tenetur nihil, corporis cumque, officiis iste impedit eos dolore ducimus ullam exercitationem sint voluptatem ratione eaque.
+                    Ipsum sit porro dolore quibusdam excepturi corrupti repellat autem recusandae voluptatibus culpa? Laborum eum voluptatem culpa saepe praesentium temporibus suscipit, quae, maiores ab aliquid at unde esse voluptates nobis est?
+                </p>
+                <ul>
+                    <li>item01</li>
+                    <li>item02</li>
+                    <li>item03</li>
+                    <li>item04</li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        &copy; 2022
+    </footer>
+</body>
+</html>

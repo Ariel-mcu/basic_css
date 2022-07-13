@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset copy.css">
+
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <link href="css/lightbox.css" rel="stylesheet" />
+    
+    <style>
+        .area {
+            width: 100%;
+            height: 1000px;
+            border: 1px solid rgb(92, 92, 92);
+            max-width: 1480px;
+            margin: auto;
+            box-shadow: 0 0 30px rgb(131, 130, 130);
+            /* 陰影 第四個顏色 */
+        }
+        #area1 {
+            background: url(images/puckered.png) no-repeat 0 0 fixed;
+        }
+        #area2 {
+            background: url(images/slide2.jpg) no-repeat 0 0 fixed;
+        }
+        #area3 {
+            background: url(images/slide3.jpg) no-repeat 0 0 fixed;
+        }
+        #area4 {
+            background: url(images/slide4.jpg) no-repeat 0 0 fixed;
+        }
+        h1 {
+            color: rgb(194, 221, 245);
+            font-size: 60px;
+            text-align: center;
+            line-height: 2em;
+        }
+        nav {
+            text-align: center;
+        }
+        nav a {
+            color: azure;
+            background-color: rgb(64, 134, 175);
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-size: 25px;
+            margin-right: 10px;
+            /* box-shadow: 10px rgb(241, 236, 236); */
+            
+        }
+       .up {
+           width: 60px;
+           height: 60px;
+           background-color: rgb(57, 128, 235);
+           color: aliceblue;
+           position: fixed;
+           right: 10px;
+           bottom: 10px;
+           border-radius: 50%;
+           line-height: 60px;
+           text-align: center;
+           text-decoration: none;
+           font-size: 20px;
+
+       }
+    </style>
+</head>
+<body>
+    <!-- .main>section#area1.area*4 -->
+    <div class="main">
+       
+        <!-- 大盒子包四個小盒子 -->
+        <section id="area1" class="area">
+            <h1>視差捲動效果</h1>
+            <!-- nav>a{area$}*4 -->
+            <nav>
+                <a href="#area1">area1</a>
+                <a href="#area2">area2</a>
+                <a href="#area3">area3</a>
+                <a href="#area4">area4</a>
+            </nav>
+        </section>
+        <section id="area2" class="area">
+
+        </section>
+        <section id="area3" class="area">
+            <a href="images/examples/image-1.jpg" rel="lightbox[roadtrip]">
+                <img src="images/examples/thumb-1.jpg" alt="">
+            </a>
+            <a href="images/examples/image-2.jpg" rel="lightbox[roadtrip]">
+                <img src="images/examples/thumb-2.jpg" alt="">
+            </a>
+            <a href="images/examples/image-3.jpg" rel="lightbox[roadtrip]">
+                <img src="images/examples/thumb-3.jpg" alt="">
+            </a>
+        </section>
+        <section id="area4" class="area">
+            <footer>
+                <a href="#area1" class="up">TOP</a>
+            </footer>
+        </section>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

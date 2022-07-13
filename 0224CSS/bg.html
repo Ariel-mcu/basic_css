@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&display=swap" rel="stylesheet">
+    <!-- 要貼在head裡 -->
+    <style>
+        body{
+            /* background-color: rgb(203, 240, 247); */
+            /* background-image: url(images/Blue-Flower-with-Sharp-Thorns-600x400.jpg); */
+            
+            /* 叫入圖片(重複至滿版) */
+            /* background-repeat: no-repeat; */
+            /* 不重複(只會顯示一張) */
+            /* background-position: center 30px; */
+            /* 背景定位，讓圖片置中，離上方距離30px*/
+            /* background-attachment: fixed; */
+            /* 讓位子定位不跑掉 */
+            background: rgb(204, 247, 255) url(images/14-blue-wallpaper-flower.1280.jpg) no-repeat 0 0 fixed;
+            /* 0 0是位置，fixed把圖片固定在畫面上 */
+            background-size: cover;
+            /* 滿版圖片把權重放在BG後面成功較高 */
+            font-family: 'Times New Roman', "新細明體";
+            /* 曾這裡改明體，先改英文，再改中文才會正常顯示 ，由多個單字組成不管中英文都要加引號*/
+            
+        }
+        p{
+            width: 200px;
+            margin: auto;
+            border: 10px double rgb(4, 88, 136);
+            /* 文字外框虛線 */
+            background-color: rgba(209, 236, 248, 0.644);
+            /* 透明化方便視覺 */
+            padding: 30px;
+            /* 框的大小 */
+            line-height: 1.8em;
+            /* 行距 */
+            text-align: center;
+            /* 字距，其行對齊 */
+            font-family: 'EB Garamond', serif;
+            /* 如果要設定字形貼在這裡 */
+        }
+        h1{
+            text-align: center;
+            color: rgb(92, 11, 241);
+            font-size: 4rem;
+            /* 文字大小，單位也em、rem(rem較不會跑版) */
+            /* font-weight: normal; */
+            /* 文字粗細 */
+            letter-spacing: 10px;
+        }
+        li{
+            list-style-type: none;
+            /* 把黑點取消(不顯示) */
+            list-style-image: url(images/images24x24.jpg);
+            /* 插入圖片 */
+            list-style-position: inside;
+            /* 在box modle的裡面，字也會著排版*/
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>我是大標題</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto maxime culpa, et eaque libero maiores id eos earum fugiat facere deleniti fugit harum optio ab. Tenetur fuga provident quam enim?
+            Laborum excepturi praesentium ut tenetur, corporis eius obcaecati quod porro quo, in debitis sint animi, assumenda aspernatur pariatur dolor provident corrupti perferendis quas? Est, dolorum reprehenderit id nobis neque aliquid.
+            Quos nulla impedit quam rem fugit debitis quaerat quidem nesciunt doloremque qui quas sequi, enim assumenda facere temporibus voluptatibus consectetur repellendus incidunt soluta? Necessitatibus dolore corrupti omnis ad sequi facilis.
+            Quas praesentium magnam omnis labore provident dolorum doloremque, eos unde veniam ratione quo voluptate inventore aut nam. Odio veniam obcaecati esse, rerum beatae error architecto incidunt. Doloremque eveniet ad pariatur.
+            Tempora asperiores nulla, quis fuga nesciunt, aperiam corrupti aut libero enim consectetur animi laudantium, explicabo vel! Odit molestiae eveniet accusamus, esse adipisci dicta assumenda impedit qui, neque amet sint expedita.
+        </p>
+        <ul>
+            <li>ITEM01</li>
+            <li>ITEM02 <br>
+                nduhsnckljeifdsvdv
+            </li>
+            <li>ITEM03</li>
+            <li>ITEM04</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border: 3px solid #666;
+        }
+        .box-absolute{
+            margin: auto;
+            position: relative;
+        }
+        /* 父層 */
+        .box-absolute p{
+            background-color: rgba(207, 121, 121, 0.692);
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            z-index: 5;
+        }
+        /* 子層 */
+        .box-relative{
+            background-color: rgba(0, 255, 255, 0.452);
+            position: relative;
+            top: 120px;
+            left: 350px;
+            z-index: 6;
+            /* 數字大小決定是否在上層(數字越大越上層) */
+        }
+        .box-fixed{
+            background-color: rgba(137, 43, 226, 0.61);
+            position: fixed;
+            /* bottom: 30px;
+            right: 10px; */
+            /* 因為fixed是最後改所以在最上層 */
+            top: 0;
+            width: 100%;
+            height: 80px;
+            z-index: 7;
+            
+        }
+        .box-fixed2{
+            width: 80px;
+            height: 80px;
+            background-color: rgb(250, 231, 153);
+            position: fixed;
+            right: 5px;
+            bottom: 5px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 80px;
+            font-size: 20px;
+            color: rgb(20, 20, 20);
+            font-family: Arial;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box-absolute">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque tenetur earum iure eaque dolorem distinctio accusantium? Quis nisi odit, optio sequi magni voluptate beatae tempore quae accusamus cumque dolores vitae?
+        </p>
+    </div>
+    <!-- 絕對位置 -->
+    <div class="box-relative"></div>
+    <!-- 相對位置 -->
+    <div class="box-fixed"></div>
+    <div class="box-fixed2">TOP</div>
+    <!-- 固定位置 -->
+</body>
+</html>

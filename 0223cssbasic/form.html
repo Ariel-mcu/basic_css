@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            width: 500px;
+            border: 1px solid rgb(90, 145, 247);
+            margin: 15px auto;
+            border-radius: 25px;
+            box-shadow: 0 0 7px;
+        }
+        legend{
+            border: 2px solid rgb(90, 145, 247);
+            border-radius: 6px;
+            padding: 5px 10px;
+            box-shadow: 0 0 5px;
+            background-color: #fff;
+        }
+        em{
+            color: red;
+        }
+        .st{
+            width: 450px;
+            margin: 20px;
+            border-bottom: 1px solid rgb(199, 196, 196);
+            padding-bottom: 10px;
+        }
+        .title{
+            width: 100px;
+            float: left;
+            text-align: right;
+            padding-right: 10px;
+        }
+        .btn{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="">姓名</label>
+        <input type="text" placeholder="請輸入真實姓名" maxlength="10">
+        <br>
+        <label for="">密碼</label>
+        <input type="password" size="20" maxlength="10" placeholder="請輸入8位數字加英文">
+        <br>
+        <label for="">意見</label>
+        <textarea name="" id="" cols="30" rows="4"></textarea>
+        <br>
+        <label for="">性別</label>
+        <input type="radio" name="gender" value="male">男
+        <!-- name、value寫判定(單一回傳)，checked寫在最後是預設先勾選 -->
+        <input type="radio" name="gender" value="female" checked>女
+        <br>
+        <label for="">興趣</label>
+        <!-- 寫多個答案(複選)用 checkbox -->
+        <input type="checkbox" name="hobby" value="music">音樂
+        <input type="checkbox" name="hobby1" value="sport">運動
+        <input type="checkbox" name="hobby2" value="reading">閱讀
+        <input type="checkbox" name="hobby3" value="movie">電影
+        <br>
+        <select name="" id="">
+            <!-- multiple代表可以複選，但通常是單選 -->
+            <option value="TPE">台北</option>
+            <option value="TPE">新北</option>
+            <option value="TPE"selected>桃園</option>
+            <!-- selected 拿來當成預設值-->
+            <option value="TPE">新竹</option>
+        </select>
+        <br>
+        <input type="file">
+        <br>
+        <input type="reset" value="清除">
+        <input type="submit" value="送出">
+    </form>
+    <br>
+    <form action="">
+        <fieldset>
+            <legend>個人資料<em>(必填)</em></legend>
+            <!-- .st*6 -->
+            <div class="st">
+                <label for="" class="title">姓名</label>
+                <input type="text" placeholder="請輸入真實姓名" maxlength="10">
+            </div>
+            <div class="st">
+                <label for=""class="title">密碼</label>
+                <input type="password" size="20" maxlength="10" placeholder="請輸入8位數字加英文">
+            </div>
+            <div class="st">
+                <label for=""class="title">性別</label>
+                <input type="radio" name="gender" value="male">男
+                <!-- name、value寫判定(單一回傳)，checked寫在最後是預設先勾選 -->
+                <input type="radio" name="gender" value="female" checked>女
+            </div>
+            <div class="st">
+                <label for=""class="title">興趣</label>
+                <!-- 寫多個答案(複選)用 checkbox -->
+                <input type="checkbox" name="hobby" value="music">音樂
+                <input type="checkbox" name="hobby1" value="sport">運動
+                <input type="checkbox" name="hobby2" value="reading">閱讀
+                <input type="checkbox" name="hobby3" value="movie">電影
+            </div>
+            <div class="st">
+                <label for=""class="title">意見</label>
+                <textarea name="" id="" cols="30" rows="4"></textarea>
+            </div>
+            <div class="st btn">
+                <input type="reset" value="清除">
+            <input type="submit" value="送出">
+            </div>
+        </fieldset>
+
+    </form>
+</body>
+</html>

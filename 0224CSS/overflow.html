@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #f00;
+        }
+        .hidden{
+            overflow: hidden;
+        }
+        .scroll{
+            overflow: scroll;
+        }
+        .auto{
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="v">
+        <!-- 默認。溢出不會被裁剪。內容在元素框外渲染
+ -->
+        <img src="images/Blue-Flower-with-Sharp-Thorns-600x400.jpg" alt="" width="300">
+    </div>
+    <div class="hidden">
+        <!--溢出被裁剪，其餘內容將不可見  -->
+        <img src="images/14-blue-wallpaper-flower.1280.jpg" alt="" width="300">
+    </div>
+    <div class="scroll">
+        <!-- 剪輯了溢出，並添加了滾動條以查看其餘內容
+ -->
+        <img src="images/1280x800dandelion_flower-1280x800.jpg" alt="" width="200">
+    </div>
+    <div class="auto">
+        <!-- ：與相似scroll，但僅在必要時添加滾動條 -->
+        <img src="images/Blue-Flower-with-Sharp-Thorns-600x400.jpg" alt="" width="200">
+    </div>
+        
+</body>
+</html>

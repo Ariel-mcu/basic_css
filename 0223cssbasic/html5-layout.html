@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper{
+            width: 960px;
+            margin: auto;
+            /* border-color: #ccc; */
+            border: 1px solid rgb(211, 166, 241);
+        }
+        header{
+            background-color: hsl(175, 47%, 61%);
+            overflow: auto;
+            padding: 10px;
+        }
+        li{
+            float: left; 
+            list-style-type: none;
+            /* 黑點拿掉 */
+            margin-right: 10px;
+
+        }
+        /* a, a:visited{
+            color: #fff;
+        }
+        a:hover, a:active{
+            color: beige;
+            text-decoration: none;
+        } */
+        a, a:visited{
+            color: rgb(161, 232, 250);
+            text-decoration: none;
+            background-color: rgb(6, 131, 233);
+            padding: 5px 15px;
+            border-radius: 20px;
+            /*  */
+        }
+        a:hover, a:active{
+            color: beige;
+            text-decoration: none;
+            background-color: rgb(216, 25, 241);
+        }
+        section{
+            width: 75%;
+            height: 500px;
+            background-color: pink;
+            float: left;
+        }
+        aside{
+            width: 25%;
+            height: 450px;
+            background-color: rgb(162, 187, 253);
+            float: left;
+
+        }
+        footer{
+            height: 100px;
+            background-color: rgb(224, 155, 238);
+            clear: both;
+            /* 清除浮動 */
+        }
+    </style>
+</head>
+<body>
+    <!-- .wrapper>(header>nav>ul>li*4>a{BTN$$})+section+aside+footer -->
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="">BTN01</a></li>
+                    <li><a href="">BTN02</a></li>
+                    <li><a href="">BTN03</a></li>
+                    <li><a href="">BTN04</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section></section>
+        <aside></aside>
+        <footer></footer>
+    </div>
+</body>
+</html>
